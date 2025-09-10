@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Greeting</h1>
+    <div class="row">
+        <div class="col-lg-5 col-md-6 text-center m-auto">
+            <div class="row">
+                <img class="img-fluid rounded-circle profile-picture m-auto" src="~/images/ProfilePicture.PNG" alt="Nicklas Markvart Nielsen" />
+                <p class="mt-1">Hey there—I’m Nicklas, a developer from Denmark. Take a look around, and if you want to see more of my work, check out my GitHub, LinkedIn, or resume. Also feel free to connect on any of the platforms mentioned below.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 text-center m-auto">
+            <div class="row">
+                <a class="btn btn-primary mt-1 mb-1" asp-page="Resume">Online Resume</a>
+            </div>
+            <div class="row">
+                <a class="btn btn-primary mt-1 mb-1" href="https://www.linkedin.com/in/nicklas-markvart-nielsen" target="_blank">LinkedIn</a>
+            </div>
+            <div class="row">
+                <a class="btn btn-primary mt-1 mb-1" href="https://www.github.com/NicklasN757" target="_blank">GitHub</a>
+            </div>
+            <div class="row">
+                <a class="btn btn-primary mt-1 mb-1" href="https://www.facebook.com/NicklasN757" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </div>
+</div>

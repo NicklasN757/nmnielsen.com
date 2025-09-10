@@ -1,0 +1,109 @@
+﻿@page
+@model nmnielsen.web.Pages.ResumeModel
+@{
+    ViewData["Title"] = "Resume";
+}
+
+<div class="row">
+    <div class="col-lg-8 m-auto rounded">
+        <div class="row bg-primary border border-black border-bottom-0 bg-gradient rounded-top">
+            <h1>Nicklas Markvart Nielsen</h1>
+            <h4>Cloud developer | C# | .Net | Azure | DevOps Automation</h4>
+        </div>
+        <div class="row bg-light text-dark border border-black border-top-0 rounded-bottom p-2">
+
+            <!-- Summary -->
+            <div class="row">
+                <h3 class="text-primary">Summary</h3>
+                <p>
+                    Certified Data Technician specializing in programming with experience in 
+                    cloud development, backend architecture, and DevOps automation. I have 
+                    contributed to projects ranging from API and database design to CI/CD 
+                    pipeline optimization in Azure DevOps, always focusing on efficiency and 
+                    scalability. 
+                </p>
+                <p>
+                    With certifications in Azure (AZ-900, AI-900), API Security, and Secure 
+                    Coding, I bring both technical expertise and a proactive, continuous-learning 
+                    mindset. 
+                </p>
+                <p>
+                    Passionate about using technology to solve real problems, I combine C#, 
+                    .NET, and Azure expertise with strong problem-solving skills and a drive to 
+                    innovate. 
+                </p>
+            </div>
+
+            <!-- Strengths -->
+            <div class="row mt-1">
+                <h3 class="text-primary">Strengths</h3>
+
+                <!-- Always learning -->
+                <div class="col-3 ms-auto me-auto border border-black rounded">
+                    <h5 class="text-primary border-bottom border-black">Always learning</h5>
+                    <p class="mb-0">
+                        I am actively seeking new
+                        knowledge, through courses and
+                        certifications or just by asking my
+                        colleagues.
+                    </p>
+                </div>
+
+                <!-- Automation expert -->
+                <div class="col-3 ms-auto me-auto border border-black rounded">
+                    <h5 class="text-primary border-bottom border-black">Automation expert</h5>
+                    <p class="mb-0">
+                        I am always looking for ways to
+                        optimize or completely automate
+                        work processes.
+                    </p>
+                </div>
+
+                <!-- Critical thinking -->
+                <div class="col-3 ms-auto me-auto border border-black rounded">
+                    <h5 class="text-primary border-bottom border-black">Critical thinking</h5>
+                    <p class="mb-0">
+                        I am always trying to understand
+                        how things work behind the
+                        scenes and always asking myself
+                        “Can this be done differently?”.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Experience -->
+            <div class="row mt-1 mb-1">
+                <h3 class="text-primary">Experience</h3>
+                <div class="col-11 border border-black rounded m-auto">
+                    @await Html.PartialAsync("_ExperiencePartial", Model.WorkExperienceItems)
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="row mt-1 mb-1">
+                <h3 class="text-primary">Education / Courses</h3>
+                <div class="col-11 border border-black rounded m-auto">
+                    @await Html.PartialAsync("_ExperiencePartial", Model.EducationExperienceItems)
+                </div>
+            </div>
+
+            <!-- Side projects -->
+            <div class="row mt-1 mb-1">
+                <h3 class="text-primary">Side projects</h3>
+                <div class="col-11 border border-black rounded m-auto">
+                    @await Html.PartialAsync("_ExperiencePartial", Model.SideProjectsItems)
+                </div>
+            </div>
+
+            <!-- Volunteering -->
+            <div class="row mt-1 mb-1">
+                <h3 class="text-primary">Volunteering</h3>
+                <div class="col-11 border border-black rounded m-auto">
+                    @await Html.PartialAsync("_ExperiencePartial", Model.VolunteeringExperienceItems)
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
