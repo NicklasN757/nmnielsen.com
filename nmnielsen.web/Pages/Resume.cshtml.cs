@@ -17,7 +17,7 @@ namespace nmnielsen.web.Pages
                 new ExperienceItem
                 {
                     Company = "Danfoss A/S",
-                    Title = "Junior Cloud Developer",
+                    Title = "Ext. Junior Cloud Developer",
                     Location = "Kolding, Denmark",
                     Period = "01.02.2024 – 31.05.2025",
                     Bullets = new List<string>
@@ -54,7 +54,7 @@ namespace nmnielsen.web.Pages
                     Company = "Journeyman's Certificate (Svendebrev)",
                     Title = "Data technician, specializing in programming",
                     Location = "Sønderborg & Viborg, Denmark",
-                    Period = "01.08.2018 - 01.02.2024",
+                    Period = "01.08.2018 - 31.10.2023",
                     Bullets = new List<string>
                     {
                         "Introductory courses in Data and communication, part one and two taken at Mercantec in Viborg.",
