@@ -4,7 +4,7 @@ namespace nmnielsen.web.Pages;
 
 public class IndexModel : PageModel
 {
-    public string Greeting { get; set; }
+    public required string Greeting { get; set; }
 
     public void OnGet()
     {
